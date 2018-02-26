@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MyMasterPage.master.cs" Inherits="Tribecka.MyMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Tribecka</title>
+    <link href="Styling/Styling.css" rel="stylesheet" type="text/css" />   
+    <meta name="description" content="Välkommen till Tribecka" />
+    <meta name="keywords" content="Kungälv Tribecka,Resturanger i kungälv,Tribecka " />
+    <meta content="BlendTrans(Duration=0.01)" http-equiv="Page-Exit" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrapper">
+        <div id="banner">
+        </div>
+        <div id="navigation">
+        <div style="font-size: 2em;">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="Home.aspx" 
+                Width="150px" Height="25px" 
+                style="font-family: 'Poor Richard'; color: #000000; font-weight: 700" 
+                ToolTip=" ">Startsida</asp:HyperLink>
+             &nbsp;&nbsp;&nbsp;
+             <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="Meny.aspx" 
+                Width="150px" Height="25px" 
+                style="font-family: 'Poor Richard'; font-weight: 700; color: #000000">Meny</asp:HyperLink>
+              <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="Bokningar.aspx" 
+                Width="149px" Height="26px" 
+                style="font-family: 'Poor Richard'; color: #000000; font-weight: 700">Bokningar</asp:HyperLink>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="Login.aspx" 
+                Width="125px" Height="28px" 
+                style="font-family: 'Poor Richard'; color: #000000; font-weight: 700">Login</asp:HyperLink>
+                 
+        </div>
+       
+        </div>
+        <div id="content_area">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        
+        <div id="sidebar">
+        </div>
+        <div id="footer">
+            <p>All rights reserved.</p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
